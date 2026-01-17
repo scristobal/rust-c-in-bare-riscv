@@ -1,3 +1,6 @@
+[build]
+target = "riscv64gc-unknown-none-elf"
+
 [target.riscv64gc-unknown-none-elf]
 linker = "riscv64-elf-gcc"
 rustflags = ["-C", "link-arg=-nostdlib", "-C", "link-arg=-Tlink.x"]

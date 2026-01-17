@@ -10,15 +10,5 @@ bindgen = "0.72.1"
 cc = "1.2.52"
 
 [features]
-default = []
-baremetal = []
-qemu = ["baremetal"]
+qemu = []
 
-[[bin]]
-name = "std"
-path = "src/bin/std.rs"
-
-[[bin]]
-name = "baremetal"
-path = "src/bin/baremetal.rs"
-required-features = ["baremetal"]

@@ -1,0 +1,6 @@
+{
+  "cargo": {
+    "target": "riscv64gc-unknown-none-elf",
+    "features": ["qemu"]
+  }
+}
