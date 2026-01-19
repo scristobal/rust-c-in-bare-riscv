@@ -2,7 +2,7 @@ Bare-metal Rust on RISC-V 64
 
 Setup: 
 - sudo pacman -S riscv64-elf-gcc qemu-system-riscv
-- cargo run --release
+- cargo run
 
 Key things to remember:
 
@@ -28,3 +28,6 @@ Key things to remember:
 
 - 0x80000000: Where QEMU virt loads kernel. Hardware-specific.
 
+Also works on Linux targets:
+- cargo run --target riscv64gc-unknown-linux-musl
+- cargo run --target x86_64-unknown-linux-gnu
